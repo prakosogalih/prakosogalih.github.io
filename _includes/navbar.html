@@ -1,11 +1,136 @@
 <nav class="site-nav">
   <div class="nav-container">
-    <a href="{{ site.baseurl }}/" class="nav-logo">{{ site.title }}</a>
+    <a href="{% if page.lang == 'en' %}{{ site.baseurl }}/en/{% else %}{{ site.baseurl }}/{% endif %}" class="nav-logo">{{ site.title }}</a>
     <ul class="nav-menu">
-      <li><a href="{{ site.baseurl }}/" class="nav-link">Home</a></li>
-      <li><a href="{{ site.baseurl }}/blog/" class="nav-link">Blog</a></li>
-      <li><a href="{{ site.baseurl }}/categories/" class="nav-link">Categories</a></li>
-      <li><a href="{{ site.baseurl }}/about/" class="nav-link">About</a></li>
+      <li><a href="{% if page.lang == 'en' %}{{ site.baseurl }}/en/{% else %}{{ site.baseurl }}/{% endif %}" class="nav-link">
+        {% if page.lang == 'en' %}Home{% else %}Beranda{% endif %}
+      </a></li>
+      <li><a href="{% if page.lang == 'en' %}{{ site.baseurl }}/en/blog/{% else %}{{ site.baseurl }}/blog/{% endif %}" class="nav-link">
+        {% if page.lang == 'en' %}Blog{% else %}Blog{% endif %}
+      </a></li>
+      <li><a href="{% if page.lang == 'en' %}{{ site.baseurl }}/en/categories/{% else %}{{ site.baseurl }}/categories/{% endif %}" class="nav-link">
+        {% if page.lang == 'en' %}Categories{% else %}Kategori{% endif %}
+      </a></li>
+      <li><a href="{% if page.lang == 'en' %}{{ site.baseurl }}/en/about/{% else %}{{ site.baseurl }}/about/{% endif %}" class="nav-link">
+        {% if page.lang == 'en' %}About{% else %}Tentang{% endif %}
+      </a></li>
+      <li class="nav-lang-switcher">
+        <a href="{{ site.baseurl }}/" class="lang-link {% if page.lang == 'id' or page.lang == nil %}active{% endif %}">🇮🇩</a>
+        <span class="lang-separator">|</span>
+        <a href="{{ site.baseurl }}/en/" class="lang-link {% if page.lang == 'en' %}active{% endif %}">🇬🇧</a>
+      </li>
     </ul>
   </div>
 </nav>
+
+<style>
+.site-nav {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  margin-right: 40px;
+}
+
+.nav-logo:hover {
+  color: #11a8cd;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #828282;
+  font-size: 16px;
+  transition: color 0.3s;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.nav-link:hover {
+  color: #11a8cd;
+  background-color: #e8f4f8;
+}
+
+.nav-lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 15px;
+  border-left: 1px solid #e8e8e8;
+  margin-left: 10px;
+}
+
+.lang-link {
+  text-decoration: none;
+  color: #828282;
+  font-size: 18px;
+  transition: all 0.3s;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+.lang-link:hover {
+  transform: scale(1.15);
+}
+
+.lang-link.active {
+  color: #11a8cd;
+  font-weight: bold;
+  background-color: #e8f4f8;
+}
+
+.lang-separator {
+  color: #e8e8e8;
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-logo {
+    margin-right: 0;
+  }
+
+  .nav-lang-switcher {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+    border-top: 1px solid #e8e8e8;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+}
+</style>
