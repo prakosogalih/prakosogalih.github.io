@@ -8,9 +8,14 @@ lang: id
   <div class="row">
     <div class="col-lg-8">
       <!-- Hero Section -->
-      <div class="hero-section mb-5">
-        <h1 class="display-5 fw-bold mb-3">Selamat Datang di Blog Automation Engineering Saya</h1>
-        <p class="lead text-muted">Halo! 👋 Saya <strong>Prakosogalih</strong>, seorang automation engineer yang berdedikasi untuk mengoptimalkan proses dan membangun sistem cerdas. Ruang ini didedikasikan untuk berbagi wawasan praktis tentang automation engineering, RPA, test automation, dan DevOps.</p>
+      <div class="hero-section text-center text-white py-5 mb-5 rounded-3 shadow-lg"
+           style="background: linear-gradient(135deg, #1f4287 0%, #213555 100%); position: relative; overflow: hidden;">
+        <div class="hero-pattern-bg"></div>
+        <div class="position-relative">
+          <h1 class="display-3 fw-bolder mb-3">Selamat Datang di Blog Automation Engineering Saya</h1>
+          <p class="lead mb-4 mx-auto" style="max-width: 700px;">Halo! 👋 Saya <strong>Prakosogalih</strong>, seorang automation engineer yang berdedikasi untuk mengoptimalkan proses dan membangun sistem cerdas. Ruang ini didedikasikan untuk berbagi wawasan praktis tentang automation engineering, RPA, test automation, dan DevOps.</p>
+          <a href="/blog/" class="btn btn-light btn-lg fw-bold shadow-sm" style="border-radius: 50px; padding: 0.75rem 2rem; transition: all 0.3s ease;">Jelajahi Artikel →</a>
+        </div>
       </div>
 
       <!-- Topics Grid -->

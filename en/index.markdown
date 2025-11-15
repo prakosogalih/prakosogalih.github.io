@@ -9,9 +9,14 @@ permalink: /en/
   <div class="row">
     <div class="col-lg-8">
       <!-- Hero Section -->
-      <div class="hero-section mb-5">
-        <h1 class="display-5 fw-bold mb-3">Welcome to My Automation Engineering Blog</h1>
-        <p class="lead text-muted">Hi there! 👋 I'm <strong>Prakosogalih</strong>, an automation engineer passionate about streamlining processes and building intelligent systems. This space is dedicated to sharing practical insights on automation engineering, RPA, test automation, and DevOps.</p>
+      <div class="hero-section text-center text-white py-5 mb-5 rounded-3 shadow-lg"
+           style="background: linear-gradient(135deg, #1f4287 0%, #213555 100%); position: relative; overflow: hidden;">
+        <div class="hero-pattern-bg"></div>
+        <div class="position-relative">
+          <h1 class="display-3 fw-bolder mb-3">Welcome to My Automation Engineering Blog</h1>
+          <p class="lead mb-4 mx-auto" style="max-width: 700px;">Hi there! 👋 I'm <strong>Prakosogalih</strong>, an automation engineer passionate about streamlining processes and building intelligent systems. This space is dedicated to sharing practical insights on automation engineering, RPA, test automation, and DevOps.</p>
+          <a href="/en/blog/" class="btn btn-light btn-lg fw-bold shadow-sm" style="border-radius: 50px; padding: 0.75rem 2rem; transition: all 0.3s ease;">Explore Articles →</a>
+        </div>
       </div>
 
       <!-- Topics Grid -->
