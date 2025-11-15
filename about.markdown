@@ -1,34 +1,34 @@
 ---
 layout: page
-title: About
+title: Tentang Saya
 permalink: /about/
 ---
 
-## About Me
+## Tentang Saya
 
-Hello! I'm **Prakosogalih**, an automation engineer passionate about streamlining processes and building intelligent systems.
+Halo! Saya **Prakosogalih**, seorang **Automation Engineer** yang berdedikasi untuk mengoptimalkan proses dan membangun sistem cerdas.
 
-### Background
+### Latar Belakang
 
-With expertise in automation engineering, I specialize in designing and implementing solutions that improve efficiency, reduce manual work, and enhance system reliability. I'm dedicated to leveraging modern tools and technologies to solve real-world automation challenges.
+Sebagai automation engineer, saya memiliki keahlian dalam merancang dan mengimplementasikan solusi otomasi yang meningkatkan efisiensi, mengurangi pekerjaan manual, dan meningkatkan reliabilitas sistem. Saya percaya bahwa otomasi yang baik dapat mentransformasi cara kita bekerja dan memberikan nilai signifikan bagi organisasi.
 
-### Interests
+### Keahlian & Minat
 
-- ⚙️ Process Automation & Optimization
-- 🤖 Robotic Process Automation (RPA)
-- 🧪 Test Automation & QA Engineering
-- 📊 Infrastructure & DevOps Automation
-- 🔧 System Integration & Orchestration
-- 💡 Continuous Improvement & Best Practices
+- ⚙️ **Otomasi Proses** - Desain dan optimasi workflow bisnis
+- 🤖 **Robotic Process Automation (RPA)** - Implementasi bot dan sistem otomasi
+- 🧪 **Test Automation** - Pengujian otomatis dan QA engineering
+- 📊 **Infrastructure & DevOps Automation** - Otomasi infrastruktur dan deployment
+- 🔧 **Sistem Integrasi** - Integrasi antar sistem dan orchestration
+- 💡 **Continuous Improvement** - Analisis dan peningkatan berkelanjutan
 
-### This Blog
+### Blog Ini
 
-I started this blog to share practical insights and best practices in automation engineering. From workflow optimization to technical deep-dives, I document solutions, lessons learned, and innovations in the automation space. Whether you're new to automation or looking to advance your expertise, I hope you find valuable content here.
+Saya memulai blog ini untuk berbagi praktik terbaik dan wawasan mendalam dalam bidang automation engineering. Dari optimasi workflow hingga technical deep-dives tentang berbagai tools dan teknologi otomasi, saya mendokumentasikan solusi, pelajaran yang dipetik, dan inovasi di bidang automation. Baik Anda baru memulai perjalanan automation atau ingin meningkatkan keahlian, semoga konten di blog ini bermanfaat bagi Anda.
 
-### Let's Connect
+### Mari Terhubung
 
 - **Twitter:** [@prakosogalih](https://twitter.com/prakosogalih)
 - **GitHub:** [prakosogalih](https://github.com/prakosogalih)
 - **Email:** [prakosogalih@proton.me](mailto:prakosogalih@proton.me)
 
-Feel free to reach out if you have questions, suggestions, or just want to chat about tech!
+Silakan hubungi saya jika Anda memiliki pertanyaan, saran, atau hanya ingin berdiskusi tentang automation engineering!
