@@ -6,23 +6,24 @@ permalink: /about/
 
 ## About Me
 
-Hello! I'm **Prakosogalih**, a full-stack developer passionate about building elegant solutions to complex problems.
+Hello! I'm **Prakosogalih**, an automation engineer passionate about streamlining processes and building intelligent systems.
 
 ### Background
 
-With experience in web development and software engineering, I enjoy working across the entire technology stack. I believe in continuous learning and sharing knowledge with the community.
+With expertise in automation engineering, I specialize in designing and implementing solutions that improve efficiency, reduce manual work, and enhance system reliability. I'm dedicated to leveraging modern tools and technologies to solve real-world automation challenges.
 
 ### Interests
 
-- 💻 Web Development (Frontend & Backend)
-- 🔧 Software Architecture & Design Patterns
-- 📚 Open Source Contributions
-- 🚀 Modern Development Tools & Practices
-- 🌐 Building User-Centric Applications
+- ⚙️ Process Automation & Optimization
+- 🤖 Robotic Process Automation (RPA)
+- 🧪 Test Automation & QA Engineering
+- 📊 Infrastructure & DevOps Automation
+- 🔧 System Integration & Orchestration
+- 💡 Continuous Improvement & Best Practices
 
 ### This Blog
 
-I started this blog to document my learning journey and share practical insights on development topics. Whether you're a beginner or an experienced developer, I hope you find valuable content here.
+I started this blog to share practical insights and best practices in automation engineering. From workflow optimization to technical deep-dives, I document solutions, lessons learned, and innovations in the automation space. Whether you're new to automation or looking to advance your expertise, I hope you find valuable content here.
 
 ### Let's Connect
 
