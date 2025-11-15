@@ -5,7 +5,6 @@ permalink: /about/
 ---
 
 <div class="container py-4">
-  <h1 class="mb-3">Tentang Saya</h1>
   <p class="lead">Halo! Saya <strong>Prakosogalih</strong>, seorang <strong>Automation Engineer</strong> yang berdedikasi untuk mengoptimalkan proses dan membangun sistem cerdas.</p>
 
   <h3 class="mt-4">Latar Belakang</h3>

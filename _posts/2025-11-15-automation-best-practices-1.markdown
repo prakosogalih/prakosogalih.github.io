@@ -2,7 +2,7 @@
 layout: post
 title: "Automation Best Practices: Start Small, Scale Safely"
 date: 2025-11-15 13:00:00 +0700
-categories: automation practices
+categories: automation
 excerpt: "Practical best practices to start automation projects with low risk and high impact."
 ---
 

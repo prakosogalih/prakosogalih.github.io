@@ -2,7 +2,7 @@
 layout: post
 title: "RPA Use Cases: Real-World Examples and ROI"
 date: 2025-11-12 09:45:00 +0700
-categories: rpa automation
+categories: automation
 excerpt: "Explore real-world RPA implementations and how they deliver measurable return on investment."
 ---
 

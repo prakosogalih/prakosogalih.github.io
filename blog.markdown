@@ -14,6 +14,9 @@ pagination:
     <p class="lead text-muted mb-0">Explore my complete collection of articles on automation, RPA, DevOps, and best practices. Each article is designed to provide practical and actionable insights.</p>
   </div>
 
+  <!-- Debugging: Check paginator posts -->
+  <p>Paginator Posts Debug: {{ paginator.posts | inspect }}</p>
+
   <!-- Filter Section -->
   <div class="mb-5">
     <div class="d-flex align-items-center gap-3 mb-4">

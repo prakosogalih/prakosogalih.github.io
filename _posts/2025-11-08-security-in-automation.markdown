@@ -2,7 +2,7 @@
 layout: post
 title: "Security in Automation: Protecting Bots and Workflows"
 date: 2025-11-08 10:15:00 +0700
-categories: automation security best-practices
+categories: automation
 excerpt: "Critical security considerations when building and deploying automated systems and RPA bots."
 ---
 

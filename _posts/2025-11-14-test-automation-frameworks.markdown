@@ -2,7 +2,7 @@
 layout: post
 title: "Choosing the Right Test Automation Framework"
 date: 2025-11-14 10:30:00 +0700
-categories: test automation frameworks
+categories: automation
 excerpt: "A guide to selecting test automation frameworks that fit your project needs and team skills."
 ---
 

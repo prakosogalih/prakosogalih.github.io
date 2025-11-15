@@ -2,7 +2,7 @@
 layout: post
 title: "API Integration: Automating Data Flow Between Systems"
 date: 2025-11-11 11:20:00 +0700
-categories: automation integration api
+categories: automation
 excerpt: "How to leverage APIs for seamless system integration and automated data synchronization."
 ---
 

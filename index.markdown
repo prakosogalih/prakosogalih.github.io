@@ -93,12 +93,6 @@ lang: en
           {% endif %}
         </div>
 
-        <!-- Call to Action -->
-        {% if posts.size > 6 %}
-          <div class="text-center mt-5">
-            <a href="/blog/" class="btn btn-lg btn-primary">View All Articles</a>
-          </div>
-        {% endif %}
       </div>
 
       <!-- CTA Section -->

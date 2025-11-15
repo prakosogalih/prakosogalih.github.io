@@ -2,7 +2,7 @@
 layout: post
 title: "This is a Dummy Post"
 date: 2025-11-15 10:00:00 +0700
-categories: [dummy, test]
+categories: automation
 tags: [example, placeholder]
 ---
 

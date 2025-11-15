@@ -2,7 +2,7 @@
 layout: post
 title: "Building CI/CD Pipelines: Automation for Deployment"
 date: 2025-11-13 14:15:00 +0700
-categories: devops automation ci/cd
+categories: automation
 excerpt: "How to design and implement CI/CD pipelines that automate builds, tests, and deployments reliably."
 ---
 

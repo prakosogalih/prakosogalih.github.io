@@ -2,7 +2,7 @@
 layout: post
 title: "[Download] GX-Works3 V1.308Q Mitsubishi FULL (Real 100%)"
 date: 2025-11-15 10:00:00 +0700
-categories: [downloads, mitsubishi]
+categories: automation
 tags: [gx-works3, mitsubishi, software, plc]
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Automation Quick Win: RPA for Repetitive Tasks"
 date: 2025-11-15 14:50:00 +0700
-categories: automation rpa
+categories: automation
 excerpt: "How to get a quick ROI from RPA by automating repetitive, rules-based tasks."
 ---
 

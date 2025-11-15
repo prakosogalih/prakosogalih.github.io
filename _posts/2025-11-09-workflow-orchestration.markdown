@@ -2,7 +2,7 @@
 layout: post
 title: "Workflow Orchestration: Managing Complex Automation Sequences"
 date: 2025-11-09 15:30:00 +0700
-categories: automation orchestration workflows
+categories: automation
 excerpt: "Tools and techniques for orchestrating multi-step automation workflows with dependencies, error handling, and scalability."
 ---
 

@@ -6,7 +6,6 @@ lang: id
 ---
 
 <div class="container py-4">
-  <h1 class="mb-4">Kategori Artikel</h1>
   <p>Jelajahi artikel berdasarkan kategori untuk menemukan konten yang sesuai dengan minat Anda.</p>
 
   {% assign categories = site.posts | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
