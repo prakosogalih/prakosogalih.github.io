@@ -21,18 +21,35 @@
 title: Prakosogalih
 email: prakosogalih@proton.me
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A personal tech blog exploring web development, coding practices, and
+  software engineering insights. Join me on this journey of continuous learning.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: prakosogalih
-github_username:  prakosogalih
+github_username: prakosogalih
+author: Prakosogalih
+lang: en
+
+# Pagination settings
+paginate: 10
+paginate_path: "/blog/page:num/"
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Minima customization
+minima:
+  skin: dark
+  social_links:
+    - { platform: twitter, user_url: "https://twitter.com/prakosogalih" }
+    - { platform: github, user_url: "https://github.com/prakosogalih" }
+
+# SEO
+google_analytics: "" # Add your Google Analytics ID here
 
 # Exclude from processing.
 # The following items will not be processed, by default.

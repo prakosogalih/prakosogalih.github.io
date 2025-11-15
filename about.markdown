@@ -4,15 +4,30 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## About Me
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Hello! I'm **Prakosogalih**, a full-stack developer passionate about building elegant solutions to complex problems.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+### Background
 
+With experience in web development and software engineering, I enjoy working across the entire technology stack. I believe in continuous learning and sharing knowledge with the community.
 
-[jekyll-organization]: https://github.com/jekyll
+### Interests
+
+- 💻 Web Development (Frontend & Backend)
+- 🔧 Software Architecture & Design Patterns
+- 📚 Open Source Contributions
+- 🚀 Modern Development Tools & Practices
+- 🌐 Building User-Centric Applications
+
+### This Blog
+
+I started this blog to document my learning journey and share practical insights on development topics. Whether you're a beginner or an experienced developer, I hope you find valuable content here.
+
+### Let's Connect
+
+- **Twitter:** [@prakosogalih](https://twitter.com/prakosogalih)
+- **GitHub:** [prakosogalih](https://github.com/prakosogalih)
+- **Email:** [prakosogalih@proton.me](mailto:prakosogalih@proton.me)
+
+Feel free to reach out if you have questions, suggestions, or just want to chat about tech!
