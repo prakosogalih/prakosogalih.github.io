@@ -1,0 +1,31 @@
+<div class="language-switcher">
+  <a href="/" class="lang-link {% if page.lang == 'id' or page.lang == nil %}active{% endif %}">🇮🇩 Bahasa Indonesia</a>
+  <span class="lang-separator">|</span>
+  <a href="/en/" class="lang-link {% if page.lang == 'en' %}active{% endif %}">🇬🇧 English</a>
+</div>
+
+<style>
+.language-switcher {
+  text-align: right;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.lang-link {
+  text-decoration: none;
+  color: #828282;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.lang-link:hover,
+.lang-link.active {
+  color: #11a8cd;
+  font-weight: bold;
+}
+
+.lang-separator {
+  color: #e8e8e8;
+  margin: 0 8px;
+}
+</style>

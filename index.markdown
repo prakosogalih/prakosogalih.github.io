@@ -1,25 +1,28 @@
 ---
 layout: home
-title: Home
+title: Beranda
+lang: id
 ---
 
-## Welcome to My Tech Blog
+## Selamat Datang di Blog Automation Engineering Saya
 
-Hi there! 👋 I'm **Prakosogalih**, a passionate developer and tech enthusiast. This space is dedicated to sharing insights on web development, coding best practices, and software engineering.
+Halo! 👋 Saya **Prakosogalih**, seorang automation engineer yang berdedikasi untuk mengoptimalkan proses dan membangun sistem cerdas. Ruang ini didedikasikan untuk berbagi wawasan praktis tentang automation engineering, RPA, test automation, dan DevOps.
 
-### Latest Posts
+### Artikel Terbaru
 
-Explore my recent articles below, organized by topic and date. Feel free to browse through different categories or check out the archives.
+Jelajahi artikel terbaru saya di bawah ini, diorganisir berdasarkan topik dan tanggal. Silakan browsing melalui berbagai kategori atau lihat arsip.
 
 ---
 
-### What You'll Find Here
+### Yang Akan Anda Temukan di Sini
 
-- **Web Development** – Modern JavaScript, frameworks, and frontend techniques
-- **Backend Development** – Server-side programming and architecture
-- **Best Practices** – Clean code, testing, and software design patterns
-- **Learning Journey** – Personal insights and lessons learned
+- **Otomasi Proses** – Strategi optimasi workflow dan otomasi proses
+- **Robotic Process Automation (RPA)** – Implementasi bot dan otomasi cerdas
+- **Test Automation** – Praktik pengujian otomatis dan QA engineering
+- **DevOps Automation** – Otomasi infrastruktur dan continuous deployment
+- **Integrasi Sistem** – Membangun integrasi seamless antar sistem
+- **Best Practices** – Standar industri dan teknik optimasi
 
-### Get In Touch
+### Hubungi Saya
 
-Interested in connecting? Find me on [Twitter](https://twitter.com/prakosogalih) or [GitHub](https://github.com/prakosogalih).
+Tertarik untuk terhubung? Temukan saya di [Twitter](https://twitter.com/prakosogalih) atau [GitHub](https://github.com/prakosogalih).
