@@ -1,31 +1,32 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand nav-brand" href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}">{{ site.title }}</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient sticky-top shadow-sm" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}" style="font-size: 1.4rem; letter-spacing: -0.5px;">
+      <span style="color: #11a8cd; margin-right: 0.5rem;">⚙️</span>{{ site.title }}
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="mainNavbar">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}">{% if page.lang == 'en' %}Home{% else %}Beranda{% endif %}</a>
+          <a class="nav-link fw-500 px-3 py-2" href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}" style="transition: color 0.3s ease;">{% if page.lang == 'en' %}Home{% else %}Beranda{% endif %}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% if page.lang == 'en' %}/en/blog/{% else %}/blog/{% endif %}">Blog</a>
+          <a class="nav-link fw-500 px-3 py-2" href="{% if page.lang == 'en' %}/en/blog/{% else %}/blog/{% endif %}" style="transition: color 0.3s ease;">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% if page.lang == 'en' %}/en/categories/{% else %}/categories/{% endif %}">{% if page.lang == 'en' %}Categories{% else %}Kategori{% endif %}</a>
+          <a class="nav-link fw-500 px-3 py-2" href="{% if page.lang == 'en' %}/en/categories/{% else %}/categories/{% endif %}" style="transition: color 0.3s ease;">{% if page.lang == 'en' %}Categories{% else %}Kategori{% endif %}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% if page.lang == 'en' %}/en/about/{% else %}/about/{% endif %}">{% if page.lang == 'en' %}About{% else %}Tentang{% endif %}</a>
+          <a class="nav-link fw-500 px-3 py-2" href="{% if page.lang == 'en' %}/en/about/{% else %}/about/{% endif %}" style="transition: color 0.3s ease;">{% if page.lang == 'en' %}About{% else %}Tentang{% endif %}</a>
         </li>
       </ul>
 
       <!-- Language Switcher -->
-      <div class="d-flex align-items-center gap-2 flex-wrap">
-        <!-- Toggle button untuk smart switch preserving path -->
-        <button id="lang-toggle" class="btn btn-primary btn-sm" aria-label="Switch language">
-          {% if page.lang == 'en' %}ID{% else %}EN{% endif %}
+      <div class="d-flex align-items-center gap-3 ms-lg-3 mt-3 mt-lg-0 flex-wrap">
+        <button id="lang-toggle" class="btn btn-light fw-bold px-3 py-2" aria-label="Switch language" style="border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.3s ease;">
+          {% if page.lang == 'en' %}🇮🇩 ID{% else %}🇬🇧 EN{% endif %}
         </button>
       </div>
     </div>
@@ -33,18 +34,72 @@
 </nav>
 
 <style>
-  /* Ensure mobile collapse works properly */
+  /* Navbar link hover effects */
+  .navbar-dark .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    position: relative;
+  }
+
+  .navbar-dark .nav-link:hover {
+    color: #11a8cd !important;
+  }
+
+  .navbar-dark .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #11a8cd;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  .navbar-dark .nav-link:hover::after {
+    width: 100%;
+  }
+
+  /* Language toggle button hover */
+  #lang-toggle {
+    background-color: #ffffff !important;
+    color: #2c3e50 !important;
+    border: none !important;
+    transition: all 0.3s ease;
+  }
+
+  #lang-toggle:hover {
+    background-color: #11a8cd !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(17, 168, 205, 0.4) !important;
+  }
+
+  /* Sticky navbar adjustment */
   @media (max-width: 991.98px) {
     .navbar-collapse {
-      padding-top: 1rem;
-      border-top: 1px solid #e9ecef;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
-    
-    .d-flex.gap-2 {
+
+    .navbar-nav {
+      padding: 0.5rem 0;
+    }
+
+    .nav-link {
+      padding: 0.5rem 0 !important;
+      margin-bottom: 0.5rem;
+    }
+
+    #lang-toggle {
+      width: 100%;
       margin-top: 1rem;
-      padding-top: 1rem;
-      border-top: 1px solid #e9ecef;
     }
+  }
+
+  /* Smooth scrolling behavior */
+  html {
+    scroll-behavior: smooth;
   }
 </style>
 
