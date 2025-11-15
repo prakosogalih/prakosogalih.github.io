@@ -107,30 +107,9 @@ lang: en
       </div>
     </div>
 
-    <!-- Sidebar (optional for future widgets) -->
+    <!-- Sidebar -->
     <div class="col-lg-4">
-      <aside class="sidebar">
-        <div class="card mb-4">
-          <div class="card-body">
-            <h6 class="card-title fw-bold mb-3">About This Blog</h6>
-            <p class="small text-muted">This blog contains articles and insights about automation engineering, tools, and best practices to optimize your workflow.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <h6 class="card-title fw-bold mb-3">Popular Categories</h6>
-            <div class="d-flex flex-wrap gap-2">
-              {% assign all_categories = site.posts | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
-              {% for category in all_categories limit:8 %}
-                {% if category != "" %}
-                  <a href="/categories/#{{ category | slugify }}" class="badge bg-secondary text-decoration-none">{{ category }}</a>
-                {% endif %}
-              {% endfor %}
-            </div>
-          </div>
-        </div>
-      </aside>
+      {% include sidebar.html %}
     </div>
   </div>
 </div>

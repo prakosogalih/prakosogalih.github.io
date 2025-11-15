@@ -31,15 +31,21 @@ github_username: prakosogalih
 author: Prakosogalih
 default_lang: en
 
-# Pagination settings
-paginate: 10
-paginate_path: "/blog/page:num/"
+# Pagination settings for jekyll-paginate-v2
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 10
+  permalink: '/blog/page:num/'
+  sort_field: 'date'
+  sort_reverse: true
+  offset: 0 # Optional: Change this to skip x amount of posts from the start of the list
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-seo-tag
 
 # Minima customization

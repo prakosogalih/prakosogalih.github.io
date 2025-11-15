@@ -1,10 +1,14 @@
 ---
 layout: page
 title: Blog
-permalink: /blog/
 lang: en
 pagination:
   enabled: true
+  collection: 'posts'
+  per_page: 10
+  permalink: '/blog/page:num/'
+  sort_reverse: true
+  sort_field: 'date'
 ---
 
 <div class="container py-5">
@@ -13,9 +17,6 @@ pagination:
     <h1 class="display-4 fw-bold mb-3">Automation Engineering Blog</h1>
     <p class="lead text-muted mb-0">Explore my complete collection of articles on automation, RPA, DevOps, and best practices. Each article is designed to provide practical and actionable insights.</p>
   </div>
-
-  <!-- Debugging: Check paginator posts -->
-  <p>Paginator Posts Debug: {{ paginator.posts | inspect }}</p>
 
   <!-- Filter Section -->
   <div class="mb-5">
