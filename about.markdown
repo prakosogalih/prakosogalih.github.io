@@ -4,31 +4,30 @@ title: Tentang Saya
 permalink: /about/
 ---
 
-## Tentang Saya
+<div class="container py-4">
+  <h1 class="mb-3">Tentang Saya</h1>
+  <p class="lead">Halo! Saya <strong>Prakosogalih</strong>, seorang <strong>Automation Engineer</strong> yang berdedikasi untuk mengoptimalkan proses dan membangun sistem cerdas.</p>
 
-Halo! Saya **Prakosogalih**, seorang **Automation Engineer** yang berdedikasi untuk mengoptimalkan proses dan membangun sistem cerdas.
+  <h3 class="mt-4">Latar Belakang</h3>
+  <p>Sebagai automation engineer, saya memiliki keahlian dalam merancang dan mengimplementasikan solusi otomasi yang meningkatkan efisiensi, mengurangi pekerjaan manual, dan meningkatkan reliabilitas sistem. Saya percaya bahwa otomasi yang baik dapat mentransformasi cara kita bekerja dan memberikan nilai signifikan bagi organisasi.</p>
 
-### Latar Belakang
+  <h3 class="mt-4">Keahlian & Minat</h3>
+  <ul>
+    <li>⚙️ <strong>Otomasi Proses</strong> - Desain dan optimasi workflow bisnis</li>
+    <li>🤖 <strong>Robotic Process Automation (RPA)</strong> - Implementasi bot dan sistem otomasi</li>
+    <li>🧪 <strong>Test Automation</strong> - Pengujian otomatis dan QA engineering</li>
+    <li>📊 <strong>Infrastructure & DevOps Automation</strong> - Otomasi infrastruktur dan deployment</li>
+    <li>🔧 <strong>Sistem Integrasi</strong> - Integrasi antar sistem dan orchestration</li>
+    <li>💡 <strong>Continuous Improvement</strong> - Analisis dan peningkatan berkelanjutan</li>
+  </ul>
 
-Sebagai automation engineer, saya memiliki keahlian dalam merancang dan mengimplementasikan solusi otomasi yang meningkatkan efisiensi, mengurangi pekerjaan manual, dan meningkatkan reliabilitas sistem. Saya percaya bahwa otomasi yang baik dapat mentransformasi cara kita bekerja dan memberikan nilai signifikan bagi organisasi.
+  <h3 class="mt-4">Blog Ini</h3>
+  <p>Saya memulai blog ini untuk berbagi praktik terbaik dan wawasan mendalam dalam bidang automation engineering. Dari optimasi workflow hingga technical deep-dives tentang berbagai tools dan teknologi otomasi, saya mendokumentasikan solusi, pelajaran yang dipetik, dan inovasi di bidang automation. Baik Anda baru memulai perjalanan automation atau ingin meningkatkan keahlian, semoga konten di blog ini bermanfaat bagi Anda.</p>
 
-### Keahlian & Minat
-
-- ⚙️ **Otomasi Proses** - Desain dan optimasi workflow bisnis
-- 🤖 **Robotic Process Automation (RPA)** - Implementasi bot dan sistem otomasi
-- 🧪 **Test Automation** - Pengujian otomatis dan QA engineering
-- 📊 **Infrastructure & DevOps Automation** - Otomasi infrastruktur dan deployment
-- 🔧 **Sistem Integrasi** - Integrasi antar sistem dan orchestration
-- 💡 **Continuous Improvement** - Analisis dan peningkatan berkelanjutan
-
-### Blog Ini
-
-Saya memulai blog ini untuk berbagi praktik terbaik dan wawasan mendalam dalam bidang automation engineering. Dari optimasi workflow hingga technical deep-dives tentang berbagai tools dan teknologi otomasi, saya mendokumentasikan solusi, pelajaran yang dipetik, dan inovasi di bidang automation. Baik Anda baru memulai perjalanan automation atau ingin meningkatkan keahlian, semoga konten di blog ini bermanfaat bagi Anda.
-
-### Mari Terhubung
-
-- **Twitter:** [@prakosogalih](https://twitter.com/prakosogalih)
-- **GitHub:** [prakosogalih](https://github.com/prakosogalih)
-- **Email:** [prakosogalih@proton.me](mailto:prakosogalih@proton.me)
-
-Silakan hubungi saya jika Anda memiliki pertanyaan, saran, atau hanya ingin berdiskusi tentang automation engineering!
+  <h3 class="mt-4">Mari Terhubung</h3>
+  <ul>
+    <li><strong>Twitter:</strong> <a href="https://twitter.com/prakosogalih">@prakosogalih</a></li>
+    <li><strong>GitHub:</strong> <a href="https://github.com/prakosogalih">prakosogalih</a></li>
+    <li><strong>Email:</strong> <a href="mailto:prakosogalih@proton.me">prakosogalih@proton.me</a></li>
+  </ul>
+</div>

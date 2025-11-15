@@ -5,28 +5,29 @@ permalink: /blog/
 lang: id
 ---
 
-# Semua Artikel
-
-Di sini Anda akan menemukan semua posting blog saya yang diorganisir berdasarkan tanggal. Gunakan navigasi atau pencarian untuk menemukan topik yang menarik bagi Anda.
-
-{% for post in site.posts %}
-  {% if post.lang != 'en' %}
-    <h3>
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h3>
-    <p class="post-date">{{ post.date | date: "%d %B %Y" }}</p>
-    {% if post.categories %}
-      <p class="post-categories">
-        Kategori: 
-        {% for category in post.categories %}
-          <span class="badge">{{ category }}</span>
-        {% endfor %}
-      </p>
-    {% endif %}
-    <p>{{ post.excerpt }}</p>
-    <a href="{{ post.url | relative_url }}">Baca selengkapnya →</a>
-    <hr>
-  {% endif %}
-{% endfor %}
+<div class="container py-4">
+  <h1 class="mb-4">Semua Artikel</h1>
+  <div class="row">
+    {% for post in site.posts %}
+      {% if post.lang != 'en' %}
+        <div class="col-12 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{ post.date | date: "%d %B %Y" }}</h6>
+              {% if post.categories %}
+                <p class="mb-2">
+                  {% for category in post.categories %}
+                    <span class="badge bg-secondary">{{ category }}</span>
+                  {% endfor %}
+                </p>
+              {% endif %}
+              <p class="card-text">{{ post.excerpt }}</p>
+              <a href="{{ post.url | relative_url }}" class="btn btn-sm btn-primary">Baca selengkapnya</a>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

@@ -1,173 +1,82 @@
-<nav class="site-nav">
-  <div class="nav-container">
-    <a href="{% if page.lang == 'en' %}{{ site.baseurl }}/en/{% else %}{{ site.baseurl }}/{% endif %}" class="nav-logo">{{ site.title }}</a>
-    <ul class="nav-menu">
-      <li><a href="{% if page.lang == 'en' %}{{ site.baseurl }}/en/{% else %}{{ site.baseurl }}/{% endif %}" class="nav-link">
-        {% if page.lang == 'en' %}Home{% else %}Beranda{% endif %}
-      </a></li>
-      <li><a href="{% if page.lang == 'en' %}{{ site.baseurl }}/en/blog/{% else %}{{ site.baseurl }}/blog/{% endif %}" class="nav-link">
-        {% if page.lang == 'en' %}Blog{% else %}Blog{% endif %}
-      </a></li>
-      <li><a href="{% if page.lang == 'en' %}{{ site.baseurl }}/en/categories/{% else %}{{ site.baseurl }}/categories/{% endif %}" class="nav-link">
-        {% if page.lang == 'en' %}Categories{% else %}Kategori{% endif %}
-      </a></li>
-      <li><a href="{% if page.lang == 'en' %}{{ site.baseurl }}/en/about/{% else %}{{ site.baseurl }}/about/{% endif %}" class="nav-link">
-        {% if page.lang == 'en' %}About{% else %}Tentang{% endif %}
-      </a></li>
-      <li class="nav-lang-switcher">
-        <a href="{{ site.baseurl }}/" class="lang-link {% if page.lang == 'id' or page.lang == nil %}active{% endif %}" title="Bahasa Indonesia">🇮🇩</a>
-        <span class="lang-separator">|</span>
-        <a href="{{ site.baseurl }}/en/" class="lang-link {% if page.lang == 'en' %}active{% endif %}" title="English">🇬🇧</a>
-        <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">{% if page.lang == 'en' %}ID{% else %}EN{% endif %}</button>
-      </li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand nav-brand" href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}">{{ site.title }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}">{% if page.lang == 'en' %}Home{% else %}Beranda{% endif %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% if page.lang == 'en' %}/en/blog/{% else %}/blog/{% endif %}">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% if page.lang == 'en' %}/en/categories/{% else %}/categories/{% endif %}">{% if page.lang == 'en' %}Categories{% else %}Kategori{% endif %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% if page.lang == 'en' %}/en/about/{% else %}/about/{% endif %}">{% if page.lang == 'en' %}About{% else %}Tentang{% endif %}</a>
+        </li>
+      </ul>
+
+      <!-- Language Switcher -->
+      <div class="d-flex align-items-center gap-2 flex-wrap">
+        <!-- Toggle button untuk smart switch preserving path -->
+        <button id="lang-toggle" class="btn btn-primary btn-sm" aria-label="Switch language">
+          {% if page.lang == 'en' %}ID{% else %}EN{% endif %}
+        </button>
+      </div>
+    </div>
   </div>
 </nav>
 
 <style>
-.site-nav {
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #e8e8e8;
-  padding: 15px 0;
-  margin-bottom: 30px;
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-logo {
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-  margin-right: 40px;
-}
-
-.nav-logo:hover {
-  color: #11a8cd;
-}
-
-.nav-menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  gap: 20px;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #828282;
-  font-size: 16px;
-  transition: color 0.3s;
-  padding: 5px 10px;
-  border-radius: 3px;
-}
-
-.nav-link:hover {
-  color: #11a8cd;
-  background-color: #e8f4f8;
-}
-
-.nav-lang-switcher {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding-left: 15px;
-  border-left: 1px solid #e8e8e8;
-  margin-left: 10px;
-}
-
-.lang-link {
-  text-decoration: none;
-  color: #828282;
-  font-size: 18px;
-  transition: all 0.3s;
-  padding: 3px 8px;
-  border-radius: 3px;
-}
-
-.lang-link:hover {
-  transform: scale(1.15);
-}
-
-.lang-link.active {
-  color: #11a8cd;
-  font-weight: bold;
-  background-color: #e8f4f8;
-}
-
-.lang-separator {
-  color: #e8e8e8;
-  margin: 0 5px;
-}
-
-.lang-toggle {
-  border: none;
-  background: #11a8cd;
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: transform 0.15s, background 0.15s;
-}
-
-.lang-toggle:hover { transform: translateY(-1px); background:#0f90a8 }
-
-@media (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    gap: 15px;
+  /* Ensure mobile collapse works properly */
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      padding-top: 1rem;
+      border-top: 1px solid #e9ecef;
+    }
+    
+    .d-flex.gap-2 {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e9ecef;
+    }
   }
-
-  .nav-menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .nav-logo {
-    margin-right: 0;
-  }
-
-  .nav-lang-switcher {
-    border-left: none;
-    padding-left: 0;
-    margin-left: 0;
-    border-top: 1px solid #e8e8e8;
-    padding-top: 10px;
-    margin-top: 10px;
-  }
-}
 </style>
 
+<!-- Bootstrap JS Bundle (with correct integrity hash) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+<!-- Language Toggle Handler -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var btn = document.getElementById('lang-toggle');
-  if (!btn) return;
+  var langToggleBtn = document.getElementById('lang-toggle');
+  if (!langToggleBtn) return;
 
-  btn.addEventListener('click', function () {
-    var path = window.location.pathname;
-    if (path === '') path = '/';
-
+  langToggleBtn.addEventListener('click', function () {
+    var currentPath = window.location.pathname || '/';
     var newPath;
-    if (path === '/en' || path === '/en/') {
+
+    // Logika toggle bahasa sambil mempertahankan path
+    if (currentPath === '/en' || currentPath === '/en/') {
+      // Dari Inggris ke Indonesia: hapus prefix /en
       newPath = '/';
-    } else if (path.indexOf('/en/') === 0) {
-      newPath = path.replace(/^\/en/, '') || '/';
+    } else if (currentPath.startsWith('/en/')) {
+      // Path dengan /en/... → hapus prefix /en
+      newPath = currentPath.replace(/^\/en/, '') || '/';
+    } else if (currentPath === '/') {
+      // Root Indonesia ke root Inggris
+      newPath = '/en/';
     } else {
-      if (path === '/') newPath = '/en/';
-      else newPath = '/en' + path;
+      // Path lain Indonesia → tambah prefix /en
+      newPath = '/en' + currentPath;
     }
 
+    // Redirect dengan query string dan hash jika ada
     var target = newPath + window.location.search + window.location.hash;
     window.location.href = target;
   });

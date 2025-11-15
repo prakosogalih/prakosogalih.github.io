@@ -1,0 +1,261 @@
+/* Bootstrap import + enhanced overrides */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
+
+/* Root colors and variables */
+:root {
+  --primary: #0d6efd;
+  --secondary: #6c757d;
+  --accent: #11a8cd;
+  --light-bg: #f8f9fa;
+  --border-color: #dee2e6;
+}
+
+/* Base styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #212529;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Main content area */
+.page-content {
+  min-height: calc(100vh - 200px);
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.page-content .wrapper,
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Heading styles */
+h1, .display-5 { color: #111; font-weight: 700; margin-bottom: 1.5rem; }
+h2, h3, h4 { color: #333; font-weight: 600; margin-top: 1.5rem; margin-bottom: 1rem; }
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+/* Lead text */
+.lead {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0f90a8;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 3px solid rgba(17,168,205,0.18);
+  outline-offset: 2px;
+}
+
+/* Cards and content blocks */
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+
+.card-title {
+  color: #111;
+  font-weight: 600;
+}
+
+.card-title a {
+  color: inherit;
+}
+
+.card-title a:hover {
+  color: var(--accent);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  padding: 0.5rem 1rem;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 3px rgba(17,168,205,0.25);
+}
+
+/* Lists */
+ul, ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.list-unstyled {
+  padding-left: 0;
+}
+
+/* Accordion */
+.accordion-button {
+  font-weight: 500;
+  color: #212529;
+  padding: 0.75rem 1.25rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--light-bg);
+  color: var(--accent);
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 3px rgba(17,168,205,0.25);
+}
+
+.accordion-body {
+  padding: 1rem 1.25rem;
+  background: #fafafa;
+}
+
+/* Footer */
+.site-footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #ecf0f1;
+  padding: 3rem 0 1rem;
+  margin-top: 3rem;
+  border-top: 3px solid var(--accent);
+}
+
+.site-footer h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.site-footer a {
+  color: #ecf0f1;
+  transition: color 0.2s ease;
+}
+
+.site-footer a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-col-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-col {
+  line-height: 1.8;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-list,
+.social-media-list {
+  margin: 0;
+  padding: 0;
+}
+
+.social-media-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.svg-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Code blocks */
+code {
+  background: var(--light-bg);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #d63384;
+}
+
+pre {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  
+  .page-content {
+    padding: 1rem 0;
+  }
+  
+  .footer-col-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Utility classes */
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Horizontal rule */
+hr {
+  border-color: var(--border-color);
+  margin: 2rem 0;
+}
