@@ -1,18 +1,3 @@
-id:
-  home: Beranda
-  blog: Blog
-  categories: Kategori
-  about: Tentang Saya
-  welcome: Selamat Datang di Blog Automation Engineering Saya
-  intro: Halo! 👋 Saya **Prakosogalih**, seorang automation engineer yang berdedikasi untuk mengoptimalkan proses dan membangun sistem cerdas.
-  latest_posts: Artikel Terbaru
-  explore: Jelajahi artikel terbaru saya di bawah ini, diorganisir berdasarkan topik dan tanggal.
-  categories_section: Kategori
-  browse: Jelajahi berbagai topik automation engineering
-  get_in_touch: Ingin terhubung?
-  find_me: Temukan saya di
-  view_post: Baca selengkapnya →
-
 en:
   home: Home
   blog: Blog

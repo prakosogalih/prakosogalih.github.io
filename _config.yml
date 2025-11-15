@@ -29,10 +29,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: prakosogalih
 github_username: prakosogalih
 author: Prakosogalih
-default_lang: id
-languages:
-  id: Bahasa Indonesia
-  en: English
+default_lang: en
 
 # Pagination settings
 paginate: 10
