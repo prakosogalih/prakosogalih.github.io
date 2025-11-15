@@ -60,9 +60,8 @@ lang: en
 
         <!-- Post List -->
         <div class="posts-container">
-          {% assign posts = site.posts %}
-          {% if posts.size > 0 %}
-            {% for post in posts limit:6 %}
+          {% assign posts = site.posts | sort: 'date' | reverse %}
+          {% for post in posts limit:6 %}
               <article class="post-preview card mb-4 border-0">
                 <div class="card-body p-4">
                   <div class="d-flex justify-content-between align-items-start mb-3">
@@ -87,7 +86,7 @@ lang: en
                 </div>
               </article>
             {% endfor %}
-          {% else %}
+          {% if posts.size == 0 %}
             <div class="alert alert-info" role="alert">
               No articles published yet. Check back later! 📝
             </div>
@@ -177,7 +176,7 @@ lang: en
   }
 
   .cta-section {
-    border-left: 4px solid var(--primary);
+    border-left: 44px solid var(--primary);
   }
 
   .sidebar {
