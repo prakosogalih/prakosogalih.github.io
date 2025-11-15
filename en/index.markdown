@@ -8,25 +8,199 @@ permalink: /en/
 <div class="container py-5">
   <div class="row">
     <div class="col-lg-8">
-      <h1 class="display-5">Welcome to My Automation Engineering Blog</h1>
-      <p class="lead">Hi there! 👋 I'm <strong>Prakosogalih</strong>, an automation engineer passionate about streamlining processes and building intelligent systems. This space is dedicated to sharing practical insights on automation engineering, RPA, test automation, and DevOps.</p>
+      <!-- Hero Section -->
+      <div class="hero-section mb-5">
+        <h1 class="display-5 fw-bold mb-3">Welcome to My Automation Engineering Blog</h1>
+        <p class="lead text-muted">Hi there! 👋 I'm <strong>Prakosogalih</strong>, an automation engineer passionate about streamlining processes and building intelligent systems. This space is dedicated to sharing practical insights on automation engineering, RPA, test automation, and DevOps.</p>
+      </div>
 
-      <hr />
+      <!-- Topics Grid -->
+      <div class="mb-5">
+        <h3 class="mb-4 fw-bold">What You'll Find Here</h3>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="topic-card p-3 rounded-3 bg-light border">
+              <h6 class="fw-bold text-primary mb-2">⚙️ Process Automation</h6>
+              <p class="small text-muted mb-0">Workflow optimization and process automation strategies</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="topic-card p-3 rounded-3 bg-light border">
+              <h6 class="fw-bold text-primary mb-2">🤖 RPA Implementation</h6>
+              <p class="small text-muted mb-0">Implementing bots and intelligent automation systems</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="topic-card p-3 rounded-3 bg-light border">
+              <h6 class="fw-bold text-primary mb-2">🧪 Test Automation</h6>
+              <p class="small text-muted mb-0">Automated testing and QA engineering practices</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="topic-card p-3 rounded-3 bg-light border">
+              <h6 class="fw-bold text-primary mb-2">📊 DevOps Automation</h6>
+              <p class="small text-muted mb-0">Infrastructure automation and continuous deployment</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="topic-card p-3 rounded-3 bg-light border">
+              <h6 class="fw-bold text-primary mb-2">🔧 System Integration</h6>
+              <p class="small text-muted mb-0">Building seamless integrations between systems</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="topic-card p-3 rounded-3 bg-light border">
+              <h6 class="fw-bold text-primary mb-2">💡 Best Practices</h6>
+              <p class="small text-muted mb-0">Industry standards and optimization techniques</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <h3 class="mt-4">Latest Posts</h3>
-      <p>Explore my recent articles below, organized by topic and date. Feel free to browse through different categories or check out the archives.</p>
+      <!-- Articles Section -->
+      <div class="articles-section">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h3 class="fw-bold mb-0">Latest Articles</h3>
+          <a href="/en/blog/" class="btn btn-sm btn-outline-primary">View All</a>
+        </div>
+        <p class="text-muted mb-4">Explore my latest articles organized by topic and date. Pick categories that interest you.</p>
 
-      <h4 class="mt-4">What You'll Find Here</h4>
-      <ul>
-        <li><strong>Process Automation</strong> – Workflow optimization and process automation strategies</li>
-        <li><strong>Robotic Process Automation (RPA)</strong> – Implementing bots and intelligent automation</li>
-        <li><strong>Test Automation</strong> – Automated testing and QA engineering practices</li>
-        <li><strong>DevOps Automation</strong> – Infrastructure automation and continuous deployment</li>
-        <li><strong>System Integration</strong> – Building seamless integrations between systems</li>
-        <li><strong>Best Practices</strong> – Industry standards and optimization techniques</li>
-      </ul>
+        <!-- Post List -->
+        <div class="posts-container">
+          {% assign en_posts = site.posts | where: "lang", "en" %}
+          {% assign default_posts = site.posts | where_exp: "post", "post.lang == nil" %}
+          {% assign posts = en_posts | concat: default_posts %}
+          {% if posts.size > 0 %}
+            {% for post in posts limit:6 %}
+              <article class="post-preview card mb-4 border-0">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-start mb-3">
+                    <div>
+                      <h5 class="card-title fw-bold mb-2">
+                        <a href="{{ post.url | relative_url }}" class="text-decoration-none">{{ post.title }}</a>
+                      </h5>
+                      <div class="post-meta small text-muted mb-3">
+                        <span class="me-3">📅 {{ post.date | date: "%b %d, %Y" }}</span>
+                        {% if post.categories %}
+                          <span>📂
+                            {% for category in post.categories %}
+                              <a href="/en/categories/#{{ category | slugify }}" class="badge bg-info text-dark me-1">{{ category }}</a>
+                            {% endfor %}
+                          </span>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                  <p class="card-text text-muted mb-3">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                  <a href="{{ post.url | relative_url }}" class="btn btn-sm btn-primary">Read More →</a>
+                </div>
+              </article>
+            {% endfor %}
+          {% else %}
+            <div class="alert alert-info" role="alert">
+              No articles published yet. Check back soon! 📝
+            </div>
+          {% endif %}
+        </div>
 
-      <p class="mt-4">Interested in connecting? Find me on <a href="https://twitter.com/prakosogalih">Twitter</a> or <a href="https://github.com/prakosogalih">GitHub</a>.</p>
+        <!-- Call to Action -->
+        {% if posts.size > 6 %}
+          <div class="text-center mt-5">
+            <a href="/en/blog/" class="btn btn-lg btn-primary">View All Articles</a>
+          </div>
+        {% endif %}
+      </div>
+
+      <!-- CTA Section -->
+      <div class="cta-section mt-5 p-4 rounded-3 bg-primary bg-opacity-10 border border-primary border-opacity-25">
+        <h4 class="fw-bold mb-3">Want to Connect?</h4>
+        <p class="mb-3">Interested in discussing automation engineering? Find me on the following platforms:</p>
+        <div class="d-flex gap-2 flex-wrap">
+          <a href="https://twitter.com/prakosogalih" target="_blank" class="btn btn-outline-primary">🐦 Twitter</a>
+          <a href="https://github.com/prakosogalih" target="_blank" class="btn btn-outline-primary">🔗 GitHub</a>
+          <a href="mailto:prakosogalih@proton.me" class="btn btn-outline-primary">✉️ Email</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar (optional untuk future widgets) -->
+    <div class="col-lg-4">
+      <aside class="sidebar">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h6 class="card-title fw-bold mb-3">About This Blog</h6>
+            <p class="small text-muted">This blog contains articles and insights about automation engineering, tools, and best practices to optimize your workflow and processes.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-title fw-bold mb-3">Popular Categories</h6>
+            <div class="d-flex flex-wrap gap-2">
+              {% assign en_posts = site.posts | where: "lang", "en" %}
+              {% assign default_posts = site.posts | where_exp: "post", "post.lang == nil" %}
+              {% assign all_categories = en_posts | concat: default_posts | map: 'categories' | join: ',' | split: ',' | uniq | sort %}
+              {% for category in all_categories limit:8 %}
+                {% if category != "" %}
+                  <a href="/en/categories/#{{ category | slugify }}" class="badge bg-secondary text-decoration-none">{{ category }}</a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </aside>
     </div>
   </div>
 </div>
+
+<style>
+  .topic-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .topic-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-color: var(--primary) !important;
+  }
+
+  .post-preview {
+    transition: all 0.3s ease;
+  }
+
+  .post-preview:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+  }
+
+  .post-preview .card-title a {
+    color: #111;
+  }
+
+  .post-preview .card-title a:hover {
+    color: var(--accent);
+  }
+
+  .hero-section {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 2rem;
+  }
+
+  .cta-section {
+    border-left: 4px solid var(--primary);
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .sidebar {
+      position: relative;
+      top: auto;
+      margin-top: 2rem;
+    }
+  }
+</style>
