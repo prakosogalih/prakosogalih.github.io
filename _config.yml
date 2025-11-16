@@ -30,9 +30,18 @@ twitter_username: prakosogalih
 github_username:  prakosogalih
 
 # Build settings
-theme: minima
+theme: bulma-clean-theme
 plugins:
   - jekyll-feed
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: Galih
 
 # Exclude from processing.
 # The following items will not be processed, by default.
