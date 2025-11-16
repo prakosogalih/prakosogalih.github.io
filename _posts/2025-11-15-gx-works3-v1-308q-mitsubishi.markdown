@@ -4,6 +4,7 @@ title: "[Download] GX-Works3 V1.308Q Mitsubishi FULL (Real 100%)"
 date: 2025-11-15 10:00:00 +0700
 categories: automation
 tags: [gx-works3, mitsubishi, software, plc]
+thumbnail: "https://plc4me.com/wp-content/uploads/2019/12/GXW1.png"
 ---
 
 **GX Works3 and GX Works2 software are alternative versions of Mitsubishi Developer PLC programmable PLC Mitsubishi FX1N, FX2N FX3G, FX3U FX5U, PLC PLC cpu, Q cpu … Generally all Mitsubishi PLC series. I also recommend using GX Works instead of GX Developer, programming much faster. GX Works has a built-in simulation so you don’t need to install the Simulation version like GX Developer anymore.**

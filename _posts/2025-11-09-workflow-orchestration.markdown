@@ -4,6 +4,7 @@ title: "Workflow Orchestration: Managing Complex Automation Sequences"
 date: 2025-11-09 15:30:00 +0700
 categories: automation
 excerpt: "Tools and techniques for orchestrating multi-step automation workflows with dependencies, error handling, and scalability."
+thumbnail: "/assets/images/automation-robot.svg"
 ---
 
 As automation matures, individual bots and scripts evolve into complex workflows with multiple steps, conditional branches, and error handling. Workflow orchestration platforms simplify this complexity.

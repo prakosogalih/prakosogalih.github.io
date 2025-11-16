@@ -4,6 +4,7 @@ title: "API Integration: Automating Data Flow Between Systems"
 date: 2025-11-11 11:20:00 +0700
 categories: automation
 excerpt: "How to leverage APIs for seamless system integration and automated data synchronization."
+thumbnail: "/assets/images/automation-robot.svg"
 ---
 
 Modern business applications rarely work in isolation. APIs (Application Programming Interfaces) enable secure, automated communication between systems, reducing manual data transfer and synchronization errors.

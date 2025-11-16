@@ -30,6 +30,9 @@ pagination:
     {% for post in paginator.posts %}
       <div class="col-12">
           <article class="card post-card border-0 shadow-sm h-100" style="transition: all 0.3s ease; border-radius: 8px;">
+            <div class="post-thumbnail-container">
+              <img src="{{ post.thumbnail | default: '/assets/images/automation-robot.svg' | relative_url }}" alt="{{ post.title }}" class="img-fluid post-thumbnail">
+            </div>
             <div class="card-body p-5">
               <div class="d-flex justify-content-between align-items-start mb-3">
                 <div style="flex: 1;">

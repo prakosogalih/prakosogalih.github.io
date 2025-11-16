@@ -4,6 +4,7 @@ title: "Choosing the Right Test Automation Framework"
 date: 2025-11-14 10:30:00 +0700
 categories: automation
 excerpt: "A guide to selecting test automation frameworks that fit your project needs and team skills."
+thumbnail: "/assets/images/automation-robot.svg"
 ---
 
 Selecting the right test automation framework can make or break your automation strategy. The choice depends on your tech stack, team expertise, and testing scope.

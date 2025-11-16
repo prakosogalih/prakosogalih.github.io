@@ -4,6 +4,7 @@ title: "Automation Best Practices: Start Small, Scale Safely"
 date: 2025-11-15 13:00:00 +0700
 categories: automation
 excerpt: "Practical best practices to start automation projects with low risk and high impact."
+thumbnail: "/assets/images/automation-robot.svg"
 ---
 
 Getting automation right starts with the right mindset: focus on small, measurable projects that deliver clear value.

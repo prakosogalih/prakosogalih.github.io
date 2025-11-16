@@ -4,6 +4,7 @@ title: "Monitoring & Alerting: Keeping Automation Running Smoothly"
 date: 2025-11-10 13:50:00 +0700
 categories: automation
 excerpt: "Essential strategies for monitoring automated systems and setting up effective alerts to catch issues before they impact business."
+thumbnail: "/assets/images/automation-robot.svg"
 ---
 
 Automation is only valuable if it keeps running reliably. Monitoring and alerting are critical to maintaining uptime and quickly resolving issues.

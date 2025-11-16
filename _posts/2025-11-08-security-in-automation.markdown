@@ -4,6 +4,7 @@ title: "Security in Automation: Protecting Bots and Workflows"
 date: 2025-11-08 10:15:00 +0700
 categories: automation
 excerpt: "Critical security considerations when building and deploying automated systems and RPA bots."
+thumbnail: "/assets/images/automation-robot.svg"
 ---
 
 Automation often handles sensitive data and performs high-risk operations (payments, data transfers, account changes). Security lapses can expose data, disrupt business, or create compliance violations.

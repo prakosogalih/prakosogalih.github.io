@@ -4,6 +4,7 @@ title: "RPA Use Cases: Real-World Examples and ROI"
 date: 2025-11-12 09:45:00 +0700
 categories: automation
 excerpt: "Explore real-world RPA implementations and how they deliver measurable return on investment."
+thumbnail: "/assets/images/automation-robot.svg"
 ---
 
 Robotic Process Automation (RPA) has proven ROI in diverse industries. Understanding common use cases helps teams identify opportunities in their own organizations.
