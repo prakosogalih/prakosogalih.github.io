@@ -21,6 +21,7 @@ export default config({
       label: 'Authors',
       slugField: 'name',
       path: 'content/authors/*',
+      format: {data: 'json'},
       schema: {
         name: fields.slug({ name: { label: 'Name' } }),
         bio: fields.markdoc({ label: 'Bio' }),
