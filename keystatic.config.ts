@@ -1,5 +1,6 @@
-// keystatic.config.ts
-import { config, fields, collection } from '@keystatic/core';
+import { config, collection, fields } from '@keystatic/core';
+
+export const markdocConfig = fields.markdoc.createMarkdocConfig({});
 
 export default config({
   storage: {
@@ -9,7 +10,7 @@ export default config({
     posts: collection({
       label: 'Posts',
       slugField: 'title',
-      path: 'src/content/posts/*',
+      path: 'posts/*',
       format: { contentField: 'content' },
       schema: {
         title: fields.slug({ name: { label: 'Title' } }),
